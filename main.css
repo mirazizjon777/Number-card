@@ -1,0 +1,156 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --body-bg: #131518;
+  --text-color: #969fad;
+  --white-color: #ffffff;
+  --card-bg: #232a34;
+  --circle-bg: #262e38;
+  --num-text: #7c8798;
+  --orange: #fc7614;
+}
+@import url(https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;500;600;800;900&display=swap);
+
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  height: 100%;
+  background: var(--body-bg);
+  color: var(--text-color);
+  display: grid;
+  place-items: center;
+  font-family: "Overpass", "Arial", sans-serif;
+  font-weight: 700;
+}
+
+.card {
+  width: 412px;
+  background-color: var(--card-bg);
+  border-radius: 3rem;
+  padding: 3.2rem 4rem 3.2rem 3.2rem;
+}
+
+.star-box {
+  width: 48px;
+  height: 48px;
+  background-color: var(--circle-bg);
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  margin-bottom: 3rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+  line-height: 1.25;
+  color: var(--white-color);
+  margin-bottom: 0.7rem;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 2.4rem;
+}
+
+.box-num {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: var(--num-text);
+  margin-bottom: 3.2rem;
+}
+
+.circle {
+  width: 51px;
+  height: 51px;
+  display: grid;
+  place-items: center;
+  background-color: var(--circle-bg);
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.5s;
+}
+
+.circle:hover {
+  background-color: var(--orange);
+  color: var(--white-color);
+}
+
+button {
+  width: 341px;
+  height: 45px;
+  background: var(--orange);
+  border-radius: 2.25rem;
+  border: none;
+  color: var(--white-color);
+  font-size: 1.5rem;
+  line-height: 1.27;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-weight: inherit;
+}
+
+button:hover {
+  background: var(--white-color);
+  color: var(--orange);
+}
+
+/* NEW card */
+
+.newCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  padding: 4.5rem 4rem 4.5rem 3.2rem;
+  text-align: center;
+}
+
+.img-mobile {
+  width: 162px;
+  height: 108px;
+  margin-bottom: 3.2rem;
+}
+
+.ball-div {
+  width: 193px;
+  height: 32px;
+  background-color: var(--circle-bg);
+  display: grid;
+  place-items: center;
+  color: var(--orange);
+  border-radius: 2.25rem;
+  margin-bottom: 3.2rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+#hidden-num {
+  background-color: var(--num-text);
+  color: var(--white-color);
+  width: 51px;
+  height: 51px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+}
